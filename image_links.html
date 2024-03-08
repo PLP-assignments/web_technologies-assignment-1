@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Links</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration:none;
+      }
+      section {
+        padding: 20px;
+      }
+      .home {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+      }
+      .home img {
+        height: 500px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        grid-gap: 10px;
+      }
+      .gallery img {
+        height: 300px;
+        width:500px
+        border 2px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#menu">Menu</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h2>Welcome to Our Images Catalogue</h2>
+      <p>Welcome to our website! Check out our linked images below.</p>
+      <div class="home img">
+        <a href="Images/Robot.jpg"
+          ><img src="Images/Robot.jpg" alt="Smiling Robot"
+        /></a>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Nature Gallery</h2>
+      <div class="gallery">
+        <a href="Images/forest.jpg"
+          ><img src="Images/forest.jpg" alt="forest with blooming red leaves"
+        /></a>
+        <a href="Images/moutain forest.jpg"
+          ><img src="Images/moutain forest.jpg" alt="mountain with forest view"
+        /></a>
+        <a href="Images/lake.jpg"
+          ><img src="Images/lake.jpg" alt="lake with forest background"
+        /></a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Food Menu</h2>
+      <div class="gallery">
+        <a href="Images/cake.jpg"
+          ><img src="Images/cake.jpg" alt="brown cake piece" /> Brown sweet
+          cake</a>
+
+        <a href="Images/sandwich.jpg"
+          ><img src="Images/sandwich.jpg" alt="juicy sandwich" /> Juicy
+          sandwich</a>
+
+        <a href="Images/grilled meat.jpg"
+          ><img src="Images/grilled meat.jpg" alt="grilled meat" /> Grilled
+          meat</a>
+      </div>
+    </section>
+  </body>
+</html>
